@@ -1,0 +1,23 @@
+nav {
+    display:flex; 
+    justify-content: space-between;   
+    padding: 26px 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.col:last-child {
+    padding: 0 20px;
+}
+
+.col:last-child > button {
+    background-color: #00000000;
+    color:#fff;
+    border:0;
+    font-size: 17;
+}
+

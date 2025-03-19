@@ -1,0 +1,306 @@
+.meetHost {
+    padding: 120px 10% 80px;
+    background: #191919;
+}
+
+.meetHostContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.arrowIcon {
+    width: 72px;
+    height: 72px;
+}
+
+.subtitle {
+    display: block;
+    font-size: 14px;
+    color: #118DA8;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.meetHost h2 {
+    font-size: 48px;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.bioText {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #999;
+}
+
+.bioText p {
+    margin: 0 0 30px 0;
+}
+
+.profileImage {
+    width: 480px;
+    height: 640px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.subscribeSection {
+    max-width: 1200px;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.newsletterSubtitle {
+    color: #118DA8;
+    font-size: 14px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.newsletterHeader {
+    margin: 50px;
+    max-width: 500px;
+}
+
+.newsletterTitle {
+    font-size: 32px;
+    margin: 0 0 40px 0;
+    font-weight: 700;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+.subscribeForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    max-width: 5000px;
+}
+
+.formInput {
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 16px 40px;
+    background: #191919;
+    color: #fff;
+    font-size: 16px;
+    max-width: 500px;
+}
+
+.submitButton {
+    background: #118DA8;
+    color: #ffffff;
+    padding: 10px 1px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 100;
+    font-size: 15px;
+    cursor:pointer;
+    transition: opacity 0.2s;
+
+    max-width: 100px;
+}
+
+.submitButton:hover {
+    opacity: 0.9;
+}
+
+.reviewsSection {
+    padding: 100px 10%;
+    background: #191919;
+}
+
+.reviewsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.reviewCard {
+    background: #000000;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: left; 
+    border: 1px solid #333;
+}
+
+.stars {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.stars img {
+    width: 24px;
+    height: 24px;
+}
+
+.reviewText {
+    font-size: 33px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    font-style:normal;
+    text-align: left;
+}
+
+.author {
+    color: #a4aeb0;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: left; 
+}
+
+@media (max-width: 1200px) {
+    .meetHostContent,
+    .subscribeSection {
+        padding: 40px 5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .meetHostContent {
+        flex-direction: column-reverse;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .profileImage {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .meetHostText {
+        padding: 0;
+    }
+
+    .reviewsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .subscribeSection {
+        flex-direction: column;
+        gap: 30px;
+        margin: 20px;
+        padding: 40px 20px;
+    }
+
+    .newsletterHeader {
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .meetHost {
+        padding: 60px 5%;
+    }
+
+    .meetHost h2 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .bioText {
+        font-size: 16px;
+    }
+
+    .subscribeSection {
+        margin: 10px;
+        padding: 30px 15px;
+    }
+
+    .newsletterTitle {
+        font-size: 42px;
+        line-height: 1.1;
+        margin-bottom: 30px;
+    }
+
+    .formInput {
+        padding: 12px 20px;
+    }
+
+    .submitButton {
+        margin: 20px 0 0;
+        width: 100%;
+        padding: 14px;
+    }
+
+    .reviewsGrid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .meetHost h2 {
+        font-size: 28px;
+    }
+
+    .arrowIcon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .newsletterTitle {
+        font-size: 32px;
+    }
+
+    .reviewCard {
+        padding: 20px;
+    }
+
+    .reviewText {
+        font-size: 14px;
+        min-height: auto;
+    }
+
+    .subscribeForm {
+        gap: 15px;
+    }
+
+    .formInput {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .submitButton {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .meetHost h2 {
+        font-size: 24px;
+    }
+
+    .newsletterTitle {
+        font-size: 28px;
+    }
+
+    .stars img {
+        width: 18px;
+        height: 18px;
+    }
+}
